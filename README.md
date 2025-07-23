@@ -1,36 +1,187 @@
-Experiment 5
+# Experiment 5: Decision-Making Statements in C++
 
-Aim - To study and implement C++ decision making statements.
+## Aim
+To study and implement **decision-making statements** (`if`, `else if`, `else`, `switch-case`) in C++ through practical coding problems.
 
-Apparatus - VS Code or Programiz Online C++ Compiler.
+---
 
-Theory - 
+## Tools Used
+- Visual Studio Code (VS Code) / Programiz Online C++ Compiler.
+
+---
+
+## Theory
+
+### Why C++ is More Efficient Than C
+
+- **Object-Oriented Programming (OOP):**  
+  Facilitates modular, reusable, and organized code with features like classes and inheritance.
+
+- **Standard Template Library (STL):**  
+  Provides pre-built efficient data structures and algorithms.
+
+- **Function Overloading & Default Arguments:**  
+  Adds flexibility and reduces redundancy.
+
+- **Strong Type Checking:**  
+  Helps avoid many common runtime errors.
+
+- **Exception Handling and Namespaces:**  
+  Enhances safety and large-scale project organization.
+
+- **Dynamic Memory Management:**  
+  Enables fine-tuned memory control using `new` and `delete`.
+
+These features make C++ better suited than C for modern, large-scale, and complex applications.
+
+Decision-making is a crucial concept in programming. In C++, we use control flow statements like `if-else` and `switch` to direct the program based on conditions.
+
+These constructs allow the program to choose different paths based on the **logical evaluation** of expressions.
+
+---
+
+### Decision-Making Statements in C++
+
+| Statement     | Purpose                                                        |
+|---------------|----------------------------------------------------------------|
+| `if`          | Executes a block if a condition is true                        |
+| `if-else`     | Executes one block if true, another if false                   |
+| `else if`     | Tests multiple conditions sequentially                         |
+| `switch-case` | Selects execution based on the value of a variable or expression |
+| `default`     | Provides fallback when no cases match                         |
+
+---
+
+## Program Descriptions
+
+### Program 1: Even or Odd Checker
+
+- **Purpose:** Check whether a number entered by the user is even or odd.
+- **Concepts Used:**
+  - `if-else` conditional
+  - Modulus operator `%` to check divisibility
+- **Logic:**  
+  If a number is divisible by 2 (i.e., `num % 2 == 0`), it is even. Otherwise, it is odd.
+
+---
+
+### Program 2: Greatest of Three Numbers
+
+- **Purpose:** Find the greatest among three user-entered numbers.
+- **Concepts Used:**
+  - Nested `if-else` statements
+  - Comparison operators (`>`, `>=`)
+- **Logic:**  
+  Compares each number in sequence and also checks for equality to handle cases where numbers are the same.
+
+---
+
+### Program 3: Vowel or Consonant
+
+- **Purpose:** Determine whether the entered alphabet is a vowel or consonant.
+- **Concepts Used:**
+  - Logical OR (`||`)
+  - Character comparison
+  - Case handling (uppercase and lowercase)
+- **Logic:**  
+  Checks if the letter is one of A, E, I, O, U (or lowercase versions). If not, it's treated as a consonant.
+
+---
+
+### Program 4: Simple Calculator (Switch Case)
+
+- **Purpose:** Perform a basic arithmetic operation based on user's choice.
+- **Operations Supported:**
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division (with division-by-zero check)
+- **Concepts Used:**
+  - `switch-case`
+  - Arithmetic operators
+  - Division safety using `if`
+- **Logic:**  
+  Based on a number (1 to 4), perform the respective operation between two entered numbers.
+
+---
+
+### Program 5: Day of the Week
+
+- **Purpose:** Display the day corresponding to a number (1 to 7).
+- **Concepts Used:**
+  - `switch-case`
+  - `default` case handling for invalid input
+- **Logic:**  
+  Map input `1` to `Monday`, `2` to `Tuesday`, ..., `7` to `Sunday`. Give a custom message for each.
+
+---
+
+## Sample Output
 
 Program 1
-This C++ program is used to check whether a number entered by the user is even or odd. It first asks the user to input any number, which is stored in the variable num. Then, it uses an if-else condition to check
-whether the number is divisible by 2 using the modulus operator %. If num % 2 is equal to 0, it means there is no remainder when divided by 2, so the number is even. Otherwise, the number is odd. This program
-helps beginners understand how to use conditional statements and the modulus operator to solve simple mathematical problems in C++.
+
+Enter a number: 4
+
+It is a even number.
 
 Program 2
-This C++ program is used to find out which of the three numbers entered by the user is the greatest. It asks the user to input three numbers: num1, num2, and num3. Then, using a set of if-else conditions, the
-program compares the numbers to decide which one is the largest. It checks various possibilities—whether num1 is greater than the others, or num2, or num3. It also tries to handle special cases like when two or all
-three numbers are equal.
+
+Enter first number: 2
+
+Enter second number: 4
+
+Enter third number: 1
+
+4 is the greatest.
 
 Program 3
-This C++ program is used to check whether the alphabet entered by the user is a vowel or a consonant. It starts by asking the user to input a single character (a letter), which is stored in the variable alphabet.
-Then, using an if-else condition, it checks whether the entered letter is one of the five vowels: A, E, I, O, or U (either in uppercase or lowercase). If it matches any of these, the program prints “It is a
-vowel!!”. If it doesn't match any vowel, the program assumes it's a consonant and prints “It is a consonant!!”. This code helps beginners understand how to use logical OR (||) operators to check multiple conditions
-and how to work with character input in C++. 
 
-Program 4
-This C++ program is a simple calculator that performs one of four operations based on the user’s choice: addition, subtraction, multiplication, or division. The user is asked to enter two numbers and then choose
-an operation using a number from 1 to 4. The switch statement is used to perform the selected operation. For each case, the corresponding arithmetic operation is done and the result is displayed. In the division
-case, the program also checks whether the second number is zero to avoid division by zero, which is not allowed in math. This program helps learners understand how to use switch-case statements, arithmetic
-operators, and input/output operations in a clean and interactive way.
+Enter a alphabet: A
+
+It is a vowel!!
+
+Program 4 
+
+Welcome to the calculator!!
+
+1.Addition 
+
+2.Subtraction 
+
+3.Multiplication 
+
+4.Division 
+
+Enter 1/2/3/4: 3
+
+Enter first number: 4
+
+Enter second number: 8
+
+The multiplication is: 32
 
 Program 5
-The user is asked to enter a number from 1 to 7, where each number represents a day of the week (1 for Monday, 2 for Tuesday, and so on). Based on the number entered, the program prints the corresponding day
-along with an encouraging or fun message to brighten the user’s mood. If the user enters a number outside the range of 1 to 7, the program responds with “Enter a valid choice!!” to guide them. This program helps
-learners understand how to use switch-case structures for decision-making.
 
-Conclusion - I learned the use of switch case and conditional statements(if-else) to imlplement and execute the codes.
+Enter a number from 1-7: 3
+
+It is Wednesday. You are half way up!
+
+----
+
+## Conclusion
+
+- Learned how to use if, else if, and else statements to make decisions based on conditions.
+
+- Understood the structure and syntax of switch-case statements for multiple choice decision-making.
+
+- Applied relational and logical operators to solve real-life problems like:
+
+Even/Odd checking
+
+Finding the greatest of three numbers
+
+Identifying vowels and consonants
+
+- Explored how to use modulus, comparison, and logical OR operators effectively.
+
+
