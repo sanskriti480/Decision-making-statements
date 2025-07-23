@@ -26,6 +26,5 @@ int main() {
 
 //Output
 
-//Program 3
 //Enter a alphabet: A
 //It is a vowel!!
