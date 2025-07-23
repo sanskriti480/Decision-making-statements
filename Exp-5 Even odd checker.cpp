@@ -24,7 +24,6 @@ int main() {
 
 //Outputs
 
-//Program 1
 //Enter a number: 4
 //It is a even number.
 
