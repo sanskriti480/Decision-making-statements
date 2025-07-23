@@ -118,13 +118,14 @@ These constructs allow the program to choose different paths based on the **logi
 
 ## Sample Output
 
-# Program 1
+Program 1
 
 Enter a number: 4
 
 It is a even number.
 
-# Program 2
+
+Program 2
 
 Enter first number: 2
 
@@ -134,13 +135,15 @@ Enter third number: 1
 
 4 is the greatest.
 
-# Program 3
+
+Program 3
 
 Enter a alphabet: A
 
 It is a vowel!!
 
-# Program 4 
+
+Program 4 
 
 Welcome to the calculator!!
 
@@ -160,7 +163,8 @@ Enter second number: 8
 
 The multiplication is: 32
 
-# Program 5
+
+Program 5
 
 Enter a number from 1-7: 3
 
